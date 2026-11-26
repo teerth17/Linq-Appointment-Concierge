@@ -1,0 +1,35 @@
+{
+  "name": "linq-appointment-concierge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --import tsx server/main.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "npm run dev -- --production",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@linqapp/sdk": "0.86.5",
+    "chrono-node": "^2.8.0",
+    "express": "^5.1.0",
+    "luxon": "^3.6.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/luxon": "^3.6.2",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^3.2.4"
+  }
+}

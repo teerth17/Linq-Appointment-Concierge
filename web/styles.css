@@ -1,0 +1,47 @@
+:root{font-family:Inter,system-ui,-apple-system,sans-serif;color:#202720;background:#f3f5ef;font-synthesis:none;--ink:#202720;--muted:#5f6b60;--line:#e3e8df;--green:#d9f4bc;--dark:#243728}
+*{box-sizing:border-box}
+body{margin:0}
+button,input{font:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default;opacity:.5}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid #377957;outline-offset:3px}
+.masthead{background:#fcfdf9;border-bottom:1px solid var(--line);height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1400px)/2));gap:12px}
+.identity,.mode,.stats,.contact,.input-row,.quick,.message-meta{display:flex;align-items:center}
+.identity{gap:12px}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--green);font-size:27px;font-weight:650;color:var(--dark)}
+.brand{font-weight:730;font-size:15px}.subtitle,.muted,.topline p,.thread-head p,.booking p,.empty p,.handoff p{color:var(--muted)}
+.subtitle{font-size:12px;margin-top:3px}
+.mode{border:1px solid #dce7d4;border-radius:99px;padding:6px 10px;white-space:nowrap;gap:6px;font-size:12px;color:#425b3a;background:#f7fbf3}
+.mode span,.attention{width:7px;height:7px;background:#658a53;border-radius:50%;flex:none}
+main{max-width:1448px;margin:auto;padding:34px 24px 46px}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(28px,4vw,43px);font-weight:705;letter-spacing:-.052em;line-height:1.1}
+.topline{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:24px}
+.topline p{font-size:14px;margin-top:9px}
+.stats{gap:9px;flex-wrap:wrap}
+.stats div{padding:8px 11px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:12px;color:var(--muted);white-space:nowrap}
+.stats strong{color:var(--ink);font-size:15px;margin-right:4px}
+.workspace{display:grid;grid-template-columns:minmax(200px,250px) minmax(0,1fr) minmax(185px,250px);min-height:644px;border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff;box-shadow:0 12px 40px #273c2510}
+.rail,.booking-pane{background:#fafbf8;padding:20px 12px}
+.rail{border-right:1px solid var(--line)}.booking-pane{border-left:1px solid var(--line)}
+.section-label{padding:0 8px 13px}h2{font-size:15px;letter-spacing:-.015em}
+.filters{display:flex;gap:6px;margin:0 8px 12px}.filters button,.quick button{background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:7px;font-size:12px;padding:6px 10px}
+.filters .filter-on{background:#e8efdf;color:var(--dark);border-color:#dfe7d7}
+.contact{width:100%;gap:10px;text-align:left;border:1px solid transparent;background:transparent;border-radius:10px;padding:10px 8px;color:var(--ink)}
+.contact:hover,.contact.chosen{background:#edf4e6;border-color:#e1ead8}
+.avatar{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#deebd4;font-size:12px;color:#425c39;font-weight:700;flex:none}
+.contact-text{min-width:0;flex:1}.contact-text strong,.contact-text small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.contact-text strong{font-size:13px}.contact-text small{color:var(--muted);margin-top:4px;font-size:11px}
+.attention{background:#bf7b28}
+.thread{display:flex;flex-direction:column;min-width:0}
+.thread-head{padding:17px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.thread-head p{font-size:12px;margin-top:4px}
+.badge{display:inline-flex;align-items:center;width:max-content;padding:3px 7px;border-radius:99px;background:#eef1ec;color:#4f5e51;font-size:10px;font-weight:620;white-space:nowrap;text-transform:capitalize}
+.badge.active,.badge.booked,.badge.delivered,.badge.read,.badge.simulated{background:#e2f1d9;color:#30572c}.badge.handoff,.badge.queued{background:#fff0ce;color:#735010}.badge.failed,.badge.opted-out,.badge.cancelled,.badge.suppressed{background:#f7e5df;color:#85382b}
+.transcript{min-height:405px;max-height:55vh;overflow:auto;padding:19px 20px;flex:1}
+.empty{min-height:260px;display:grid;align-content:center;justify-items:center;gap:9px;text-align:center;padding:15px}
+.empty h3,.handoff h3,.booking h3{font-size:15px}.empty p,.handoff p,.rail-empty,.booking p{font-size:13px;line-height:1.55}.empty-icon{color:#3f5a36;font-size:30px;line-height:1;background:#e6f0dc;border-radius:12px;padding:4px 12px 9px}
+.exchange{display:grid;gap:8px;margin-bottom:18px}.message{width:fit-content;max-width:92%;border-radius:12px;padding:9px 12px;overflow-wrap:anywhere}.message p{font-size:14px;white-space:pre-wrap;line-height:1.45}.message-meta{font-size:11px;color:#50624e;gap:6px;margin-bottom:4px}.incoming{background:#f0f2ee}.outgoing{justify-self:end;background:#e9f4e2}.decision{justify-self:end;max-width:100%;color:var(--muted);font-size:11px;line-height:1.5;text-align:right}.decision summary{cursor:pointer}.decision code{display:block;overflow-wrap:anywhere}
+.composer{border-top:1px solid var(--line);padding:15px 20px}.composer label{font-size:12px;font-weight:690}.input-row{gap:8px;margin-top:8px}.input-row input{width:100%;min-width:0;padding:9px 10px;border:1px solid #d8e0d4;border-radius:7px;color:var(--ink)}.input-row button,.handoff button{background:var(--dark);color:#fff;border:0;border-radius:7px;padding:10px 12px;white-space:nowrap;font-size:13px}.input-row button span{margin-left:4px}.quick{gap:6px;flex-wrap:wrap;margin-top:9px}.quick button{padding:4px 7px}.quick button:hover{background:#edf4e6}
+.rail-empty,.booking,.pending,.handoff{margin:5px 8px 12px}.booking,.pending,.handoff{border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px}.booking h3{margin-top:7px}.booking small,.pending{color:var(--muted);font-size:12px}.handoff p{margin:8px 0}.handoff button{width:100%;white-space:normal}.alert,.error{color:#8f3529}.alert{font-size:13px;background:#fff1eb;padding:9px 12px;border-radius:7px;margin:8px}
+@media(max-width:950px){.workspace{grid-template-columns:185px minmax(0,1fr)}.booking-pane{grid-column:1/-1;border-left:0;border-top:1px solid var(--line)}.booking,.pending,.handoff{max-width:340px}}
+@media(max-width:620px){main{padding:20px 12px}.masthead{padding:0 12px}.brand{font-size:13px}.topline{align-items:start;flex-direction:column}.workspace{grid-template-columns:1fr}.rail{border-right:0;border-bottom:1px solid var(--line)}.transcript{min-height:300px}.contact{padding:7px 8px}.thread-head,.transcript,.composer{padding-left:13px;padding-right:13px}}
+
